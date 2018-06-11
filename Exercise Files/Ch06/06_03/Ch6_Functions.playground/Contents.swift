@@ -4,7 +4,7 @@
 import UIKit
 
 /* Our First Function */
-
+// การสร้างฟังก์ชัน
 func CurrentDate() {
     print("It's 3/21/2017")
 }
@@ -36,6 +36,7 @@ func CurrentDateWithOptional(message: String?) {
     }
 }
 
+// การกำหนดค่าเริ่มต้นให้กับพารามิเตอร์
 func AllTogetherNow(name: String, codingHours: Int, isTired: Bool? = true) -> String {
     let output = "\(name) has been coding for \(codingHours). Tired yet? \(isTired!)"
     return output
@@ -50,6 +51,8 @@ func HelloWorld(name: String) -> String {
     return "Hello \(name)"
 }
 
+// การส่งพารามิเตอร์เป็นฟังก์ชัน
+// ฟังก์ชันไม่มีการรีเทิร์นค่า
 func FunctionAsParameter(helloWorldFunc: (String) -> String, name: String) {
     print(helloWorldFunc(name))
 }

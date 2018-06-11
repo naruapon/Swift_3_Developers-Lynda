@@ -27,6 +27,7 @@ extension PUser {
     }
 }
 
+//การใช้งาน Protocol กับ Structure
 struct User: PUser {
     var firstName: String
     var lastName: String
