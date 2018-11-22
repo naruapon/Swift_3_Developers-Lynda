@@ -46,6 +46,8 @@ var enemyDamage, enemyAttack, enemyMana: Int
 var anInteger: Int = 1
 var aDouble: Double = 2.0
 
+// การแปลงชนิดข้อมูล
+
 var doubleFromInt = Double(anInteger)
 var floatFromDouble = Float(aDouble)
 

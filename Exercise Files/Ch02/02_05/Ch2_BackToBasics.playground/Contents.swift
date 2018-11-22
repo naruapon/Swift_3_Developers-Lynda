@@ -55,7 +55,7 @@ var result2 = Double(anInteger) + aDouble
 
 
 /* Using Strings */
-
+// การประกาศตัวแปร String แบบต่างๆ
 var imEmpty = ""
 var imAlsoEmpty = String()
 
@@ -64,9 +64,11 @@ var againEmpty: String
 var firstName: String = "Harrison"
 var lastName = "Ferrone"
 
+// การเชื่อมข้อความ
 var fullName = firstName + " " + lastName
 fullName += " is using Swift 3"
 
+// การนำค่าตัวแปรมาใช้ในข้อความ 
 var message = "I'm learning Swift 3!"
 var interpolatedMessageString = "Look Ma, \(message)"
 
