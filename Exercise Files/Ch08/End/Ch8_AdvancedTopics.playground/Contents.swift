@@ -52,23 +52,29 @@ var anotherGenericTest = GenericAppend(item: "World!", itemArray: ["Hello"])
 
 
 /* Functional Swift */
+// การเขียนโปรแกรมแบบ Functional
 
 var scores = [123, 43, 57, 2001]
 
+// เพิ่มค่าอีก 1 ในแต่ละข้อมูล
 var mappedScores = scores.map { (score) -> Int in
     let newScore = score + 1
     return newScore
 }
 
+// เพิ่มค่าอีก 1 ในแต่ละข้อมูล แบบย่อ
 var shorthandMap = scores.map { $0 + 1 }
 print(shorthandMap)
 
+// กรองข้อมูล
 var filteredScores = scores.filter { (score) -> Bool in
     return score != 43
 }
 
+// กรองข้อมูล แบบย่อ
 var shorthandFilter = scores.filter({ $0 != 43 })
 print(shorthandFilter)
+
 
 var reducedScores = scores.reduce(0) { (score1, score2) -> Int in
     score1 + score2

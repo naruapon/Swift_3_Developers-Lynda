@@ -4,6 +4,7 @@
 import UIKit
 
 /* Extensions & Protocols */
+// เพิ่มเติม func ของ String (Structure)
 
 extension String {
     func AddDebug() -> String {
@@ -21,6 +22,8 @@ protocol PUser {
     func CreateFullName() -> String
 }
 
+
+// เพิ่มเติมความสามารถกับ Protocol
 extension PUser {
     func CreateFullName() -> String {
         return "\(self.firstName) \(self.lastName)"

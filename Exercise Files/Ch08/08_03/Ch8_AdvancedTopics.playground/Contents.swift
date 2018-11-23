@@ -38,6 +38,7 @@ newUser.CreateFullName()
 
 
 /* Fun with Generics */
+// func แบบ Generics  (GenericAppendใช้ได้กับ ชนิดข้อมูลอื่นๆ)
 
 func GenericAppend<T>(item: T, itemArray: [T]) -> [T] {
     var returnArray = itemArray
