@@ -11,8 +11,12 @@ class UserClass {
     
     let userConstant: String? = nil
     
+    
+    // lazy 
     lazy var messages = [String]()
     
+    
+    // get, set
     var computedAge: Int {
         get {
             return age
@@ -23,10 +27,13 @@ class UserClass {
         }
     }
     
+    // var has implement
     var computedInteractions: Int {
         return messages.count * 20
     }
     
+    
+    // willSet, didSet
     var lastName: String = "" {
         willSet(updatedLastName) {
             print("Lastname will be \(updatedLastName)")
@@ -39,6 +46,7 @@ class UserClass {
         }
     }
     
+    // constructor
     init(firstName: String, age: Int) {
         self.firstName = firstName
         self.age = age
